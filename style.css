@@ -1,0 +1,105 @@
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: #7b53fd;
+	display: flex;
+	justify-content: center;
+}
+
+.panel {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.tier {
+	min-width: 0;
+	max-width: calc(3 / 100);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	flex-grow: 1;
+}
+
+.tier:nth-of-type(2) {
+	border-left: 1px solid gainsboro;
+	border-right: 1px solid gainsboro;
+}
+
+.tier-img {
+	width: 300px;
+	height: 250px;
+	margin-bottom: 2em;
+}
+
+.tier-header {
+	color: #274c77;
+	text-shadow: 2.5px 5px 3px gray;
+	margin-bottom: 2em;
+	font-weight: bold;
+	letter-spacing: 3px;
+	transition: letter-spacing 0.25s;
+}
+
+.tier-header:hover {
+	letter-spacing: 0.3em;
+}
+
+.tier-features {
+	max-width: 80%;
+	color: slateblue;
+	list-style: none;
+	margin-bottom: 2em;
+}
+
+.tier-features-item {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid grey;
+	text-transform: capitalize;
+}
+
+.tier-features-item:first-of-type {
+	padding: 1em 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+.tier-price {
+	font-size: 1.5em;
+	font-weight: 600;
+	color: blue;
+}
+
+.tier-button {
+	margin-top: 1em;
+	padding: 0.5em 3em;
+	text-decoration: none;
+	color: black;
+	border: 2px solid grey;
+	border-radius: 10px;
+	transition: background-color 0.25s, color 0.25s, translate 0.25s;
+}
+
+.tier-button:hover {
+	background-color: #539ffd;
+	color: white;
+	translate: 0px -5px;
+}
+
+@media (max-width: 990px) {
+	.panel {
+		flex-direction: column;
+	}
+}
