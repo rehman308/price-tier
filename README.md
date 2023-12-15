@@ -1,6 +1,7 @@
 # price-tier
 
 DEMO: https://rehman308.github.io/price-tier/
+
 This repository contains a simple and visually appealing Price List webpage created for practice purposes. The webpage is designed to showcase different tiers of a service along with their features and pricing. It is built using HTML for the structure and styling with CSS. The layout is responsive, making it suitable for various screen sizes, from desktops to mobile devices.
 
 Features:
@@ -12,6 +13,7 @@ Features:
 
 How to Use:
 1. Clone the repository to your local machine.
+
 git clone https://github.com/your-username/price-list-webpage.git
 2. Open the index.html file in a web browser to view the webpage.
 
